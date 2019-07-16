@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_height="120dp"
+        android:layout_width="120dp"
+        android:src="@drawable/pic"
+        />
+    <TextView 
+        android:id="@+id/tv_rid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="标签:120000000000000000000000"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:singleLine="true"
+        android:layout_toRightOf="@id/iv_image"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="9dp"
+        android:ellipsize="end"
+        />
+    <TextView 
+        android:id="@+id/tv_findTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:layout_toRightOf="@id/iv_image"
+        android:layout_below="@id/tv_rid"
+        android:text="发现时间： TUE Jan 29 13:14:18 GMT +08:00 2019"
+        android:layout_marginLeft="9dp"
+         android:layout_marginTop="8dp"
+        android:textSize="15sp"
+        android:textColor="#b2b2b2"
+        android:ellipsize="end"
+        
+        />
+     <TextView 
+        android:id="@+id/tv_rlimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:layout_toRightOf="@id/iv_image"
+        android:layout_below="@id/tv_findTime"
+        android:text="RSSI范围：-49~-48"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="9dp"
+        android:textSize="15sp"
+        android:textColor="#b2b2b2"
+        android:ellipsize="end"
+        
+        />
+     <TextView 
+        android:id="@+id/tv_rchecknum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:layout_toRightOf="@+id/tv_rlimit"
+        android:layout_below="@id/tv_findTime"
+        android:text="清点次数：4"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="15sp"
+        android:textColor="#b2b2b2"
+        android:ellipsize="end"
+        
+        />
+
+</RelativeLayout>

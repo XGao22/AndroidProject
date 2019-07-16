@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+  <ImageView
+      android:id="@+id/iv_image"
+      android:layout_width="120dp"
+      android:layout_height="120dp"
+      android:src="@drawable/material" />
+
+  <TextView
+      android:id="@+id/tv_materialid"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="12dp"
+      android:layout_marginTop="20dp"
+      android:layout_toRightOf="@id/iv_image"
+      android:hint="盛具编号：12000000000000"
+      android:singleLine="true"
+      android:textColor="#000000"
+      android:textSize="25sp" />
+
+  <TextView
+      android:id="@+id/tv_rfidNum"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/tv_materialid"
+      android:layout_marginLeft="12dp"
+      android:layout_marginTop="12dp"
+      android:layout_toRightOf="@id/iv_image"
+      android:text="共包含2个标签"
+      android:textColor="#b2b2b2"
+      android:textSize="20sp" />
+
+  <TextView
+      android:id="@+id/tv_detail"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toRightOf="@+id/tv_rfidNum"
+      android:layout_below="@+id/tv_materialid"
+      android:text="详情"
+      android:layout_marginTop="12dp"
+      android:layout_marginLeft="100dp"
+      android:textSize="20sp"
+      android:textColor="#3D74F2"
+     />
+
+</RelativeLayout>

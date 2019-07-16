@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">沈阳RFID</string>
+    <drawable name="clr_normal">#85CAF3</drawable>
+    <drawable name="clr_pressed">#3D5D6F</drawable>
+</resources>

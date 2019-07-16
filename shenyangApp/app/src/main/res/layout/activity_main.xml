@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tjkcht.shenyangapp.MainActivity" >
+    <!--清点标签-->
+    <ListView
+        android:id="@+id/lv_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+    </ListView>
+    <!--清点料框-->
+    <ListView
+        android:id="@+id/lv_material"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+    </ListView>
+
+
+    <!--开启服务。关闭服务-->
+    <LinearLayout
+        android:id="@+id/ll_servicemanage"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:layout_marginTop="240dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        >
+
+        <Button
+            android:id="@+id/bt_openservice"
+            android:onClick="openservice"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="#4D4DFF"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:text="开启服务"/>
+        <Button
+            android:id="@+id/bt_closeservice"
+            android:onClick="closeservice"
+            android:layout_width="match_parent"
+            android:layout_marginTop="60dp"
+            android:layout_height="120dp"
+            android:background="#A8A8A8"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:text="关闭服务"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="#B2B2B2" >
+        <TextView
+            android:onClick="checkRFID"
+            android:id="@+id/checkRFID"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:hint="清点标签"
+            android:textColor="#FF0000"
+            android:textSize="23sp"
+
+            android:layout_marginBottom="10dp"
+            />
+
+        <TextView
+            android:onClick="checkmaterial"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:hint="清点料框"
+            android:textColor="#FF0000"
+            android:textSize="23sp"
+
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:onClick="servicemanage"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:hint="服务管理"
+            android:textColor="#FF0000"
+            android:textSize="23sp"
+
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
